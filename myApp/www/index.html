@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zombie Apocalypse To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" language="JavaScript">
+        // create a new to-do
+function createNewToDo()
+{
+    var todoDictionary = {};
+ 
+    // prompt the user to enter to-do
+    var todo = prompt("To-Do","");
+    if (todo != null)
+    {
+        if (todo == "")
+        {
+            alert("To-Do can't be empty!");
+        }
+        else
+        {
+            // append the new to-do with the table
+            todoDictionary = { check : 0 , text : todo};
+            addTableRow(todoDictionary, false);
+        }
+    }
+ 
+}
+ 
+        </script>
+    </head>
+    <body>
+ <input type="button" value="Add To-Do"/>
+<input type="button" value="Remove Completed Tasks"/>
+<br/><br/>
+<table id="dataTable" width="100%" border="1">
+ 
+</table>
+    </body>
+</html>
